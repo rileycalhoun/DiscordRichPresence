@@ -1,0 +1,17 @@
+{
+  "updateInterval": 30,
+  "presences": {
+    "secret": {
+      "state": "",
+      "details": "",
+      "largeImage": {
+        "key": "",
+        "text": ""
+      },
+      "smallImage": {
+        "key": "",
+        "text": ""
+      }
+    }
+  }
+}

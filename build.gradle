@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow" version "7.1.2"
+}
+
+group 'dev.blackcandletech'
+version '1.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.Vatuu:discord-rpc:1.6.2'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "dev.blackcandletech.rpc.PresenceManager"
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
